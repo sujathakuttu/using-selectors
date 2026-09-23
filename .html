@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Element Selectors</title>
+</head>
+<body>
+
+<h2 id="heading">JavaScript Selectors</h2>
+
+<p class="demo">First Paragraph</p>
+<p class="demo">Second Paragraph</p>
+
+<button onclick="selectElements()">Select Elements</button>
+
+<script>
+function selectElements() {
+
+    let heading = document.getElementById("heading");
+    heading.style.color = "blue";
+
+    let para = document.getElementsByClassName("demo");
+    para[0].style.color = "red";
+    para[1].style.color = "green";
+
+}
+</script>
+
+</body>
+</html>
